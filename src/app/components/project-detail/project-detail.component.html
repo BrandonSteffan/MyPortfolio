@@ -1,8 +1,11 @@
-<div class="project-card" *ngIf="project">
-    <img src={{project.img}} alt="project screenshot">
-    <div class="content">
-        <h3>{{project.name}}</h3>
-        <p>{{project.description}}</p>
+<div class="content" *ngIf="project">
+    <div class="title">
+        <button (click)="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+        <h2>{{project.name}}</h2>
+    </div>
+    
+    <div class="description">
+        <p>{{project.descriptionLong}}</p>
         <div class="techs">
             <i class="fa-brands fa-html5" *ngIf="project.html"></i>
             <i class="fa-brands fa-css3-alt" *ngIf="project.css"></i>
@@ -11,7 +14,10 @@
         </div>
         <a href={{project.gitUrl}} target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href={{project.netUrl}} target="_blank" *ngIf="project.netUrl != ''"><i class="fa-solid fa-globe"></i></a>
-        <a routerLink="/projects/{{project.urlName}}">Details</a>
+    </div>
+    <div class="images">
+        <img src={{project.img}} alt="project screenshot">
+        <img src={{project.imgD1}} alt="project screenshot">
+        <img src={{project.imgD2}} alt="project screenshot" *ngIf="project.imgD2 != ''">
     </div>
 </div>
-

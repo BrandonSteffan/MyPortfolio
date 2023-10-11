@@ -1,0 +1,27 @@
+:host{
+    display: block;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+    width: 80%;
+    margin: auto;
+}
+
+.content{
+    .title{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        button{
+            border: none;
+            padding: 10px;
+            background-color: #111;
+            &:hover{
+                cursor: pointer;
+            }
+            i{
+                color: #fefefe;
+                font-size: 18px;
+            }
+        }
+    }
+}
