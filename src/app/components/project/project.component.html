@@ -1,0 +1,9 @@
+<div class="project-card" *ngIf="project">
+    <img src={{project.img}} alt="project screenshot">
+    <div class="content">
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+        <a href={{project.gitUrl}} target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
+</div>
+
