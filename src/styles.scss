@@ -5,6 +5,7 @@
 :root {
 --heading-font: "Playfair Display SC", sans-serif;
 --paragraph-font:  'Poppins', sans-serif;
+--orange : #ffbf00;
 }
 
 *{
@@ -18,7 +19,7 @@ body{
     min-height: 100vh;
     background-color: #111;
     color: #fefefe;
-    font-family: "Roboto",sans-serif;
+    font-family: var(--paragraph-font);
 }
 
 a{
