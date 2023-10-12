@@ -4,4 +4,48 @@
     padding-bottom: 12vh;
     width: 80%;
     margin: auto;
+    min-height: 90vh;
+}
+
+.card{
+    padding-top: 200px;
+    h1{
+        font-size: 50px;
+        text-align: center;
+        z-index: 1;
+    }
+    hr{
+        margin: auto;
+        margin-top: -11px;
+        width: 80%;
+        
+        height: 3px;
+        border: none;
+        background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #fefefe));
+    }
+    h2{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .home-text{
+        width: 500px;
+        margin: auto;
+    }
+    .home-links{
+        width: 100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        a{
+            i{
+                font-size: 30px;
+            }
+        }
+    }
 }
