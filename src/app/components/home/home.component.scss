@@ -106,13 +106,49 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 100px;
     .skill{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         i{
             font-size: 50px;
         }
         p{
             display: none;
         }
+        &:hover{
+            i{
+                color: var(--orange);
+            }
+            p{
+                display: block;
+            }
+        }
+    }
+}
+
+.about{
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width:500px){
+    .skills{
+        flex-wrap: wrap;
+        height: 300px;
+        .skill{
+            width: 60px;
+        }
+    }
+    .card{
+        padding-top: 100px;
+    }
+    .about{
+        width: 80%;
+    }
+    .mouse_scroll{
+        margin-top: 100px !important;
     }
 }
 // added

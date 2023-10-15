@@ -11,17 +11,65 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        margin-bottom: 50px;
         button{
             border: none;
             padding: 10px;
             background-color: #111;
+            transition-duration: .2s;
             &:hover{
                 cursor: pointer;
+                transform: scale(1.1);
             }
             i{
-                color: #fefefe;
+                color: var(--orange);
                 font-size: 18px;
             }
         }
+    }
+    .description{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+        p{
+            margin-bottom: 10px;
+        }
+        .techs{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            i{
+                font-size: 30px;
+            }
+        }
+        .links{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            a{
+                i{
+                    font-size: 40px;
+                    color: var(--orange);
+                    transition-duration: .3s;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    .images{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .links{
+        padding-top: 50px;
     }
 }

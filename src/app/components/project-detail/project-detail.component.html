@@ -12,8 +12,10 @@
             <i class="fa-brands fa-square-js" *ngIf="project.js"></i>
             <i class="fa-brands fa-angular" *ngIf="project.angular"></i>
         </div>
-        <a href={{project.gitUrl}} target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href={{project.netUrl}} target="_blank" *ngIf="project.netUrl != ''"><i class="fa-solid fa-globe"></i></a>
+        <div class="links">
+            <a href={{project.gitUrl}} target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href={{project.netUrl}} target="_blank" *ngIf="project.netUrl != ''"><i class="fa-solid fa-globe"></i></a>
+        </div>
     </div>
     <div class="images">
         <img src={{project.img}} alt="project screenshot">
