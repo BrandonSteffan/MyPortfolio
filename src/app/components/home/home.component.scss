@@ -45,8 +45,15 @@
         display: flex;
         justify-content: space-between;
         a{
+            transition-duration: .2s;
             i{
                 font-size: 30px;
+            }
+            &:hover{
+                transform: scale(1.1);
+                i{
+                    color: var(--orange);
+                }
             }
         }
     }

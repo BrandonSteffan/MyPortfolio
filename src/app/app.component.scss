@@ -16,6 +16,7 @@ header{
             display: flex;
         }
         .top-nav{
+            margin-left: 30px;
             ul{
                 display: flex;
                 justify-content: space-between;
@@ -67,6 +68,16 @@ footer{
             .top-nav{
                 ul{
                     gap: 0px;
+                    li{
+                        a{
+                            // padding: .5em 1em;
+                            &:hover{
+                                border: none;
+                                border-radius: 0px;
+                                border-bottom: 2px solid var(--orange);
+                            }
+                        }
+                    }
                 }
             }
         }
