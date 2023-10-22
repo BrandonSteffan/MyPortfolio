@@ -31,6 +31,11 @@
             gap: 10px;
             i{
                 font-size: 20px;
+                transition-duration: .3s;
+                &:hover{
+                    color: var(--orange);
+                    transform: scale(1.1);
+                }
             }
             .btn{
                 border: 1px solid var(--orange);

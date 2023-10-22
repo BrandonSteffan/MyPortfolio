@@ -57,6 +57,11 @@ footer{
             align-items: center;
             i{
                 font-size: 30px;
+                transition-duration: .3s;
+                &:hover{
+                    color: var(--orange);
+                    transform: scale(1.2);
+                }
             }
         }
     }
