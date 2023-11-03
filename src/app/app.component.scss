@@ -24,9 +24,11 @@ header{
                 li{
                     a{
                         padding: .75em 2em;
+                        transition: .3s ease-out;
+                        border-radius: 1em;
+                        border: 2px solid transparent;
                         &:hover{
                             border: 2px solid var(--orange);
-                            border-radius: 1em;
                             color: var(--orange);
                         }
                     }

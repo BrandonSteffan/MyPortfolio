@@ -4,16 +4,23 @@
         <h3>{{project.name}}</h3>
         <p>{{project.description}}</p>
         <div class="techs">
-            <i class="fa-brands fa-html5" *ngIf="project.html"></i>
+            <!-- <i class="fa-brands fa-html5" *ngIf="project.html"></i>
             <i class="fa-brands fa-css3-alt" *ngIf="project.css"></i>
             <i class="fa-brands fa-square-js" *ngIf="project.js"></i>
-            <i class="fa-brands fa-angular" *ngIf="project.angular"></i>
+            <i class="fa-brands fa-angular" *ngIf="project.angular"></i> -->
+            <p>
+                <span *ngIf="project.html">HTML</span> 
+                <span *ngIf="project.css"> / CSS</span>
+                <span *ngIf="project.js"> / Javascript</span>
+                <span *ngIf="project.angular"> / Typescript</span>
+                <span *ngIf="project.angular"> / Angular</span>
+            </p>
         </div>
         <div class="links">
             <a href={{project.gitUrl}} target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href={{project.netUrl}} target="_blank" *ngIf="project.netUrl != ''"><i class="fa-solid fa-globe"></i></a>
-            <a routerLink="/projects/{{project.urlName}}" class="btn">Details</a>
         </div>
+        <a routerLink="/projects/{{project.urlName}}" class="btn">Details</a>
     </div>
 </div>
 

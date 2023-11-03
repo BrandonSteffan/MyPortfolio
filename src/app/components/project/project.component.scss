@@ -6,9 +6,22 @@
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    background-color: #27272a7e;
+    padding: 1em;
+    border-radius: 5px;
+    background-image: url("../../../assets/images/subtle-prism.svg");
+    background-position: center;
+    background-size: cover;
+    // backdrop-filter: blur(100px);
     img{
         width: 400px;
         height: 300px;
+        filter: brightness(.7);
+        border-radius: 5px;
+        transition: .3s;
+        &:hover {
+            filter: brightness(1);
+        }
     }
     .content{
         h3{
@@ -20,7 +33,12 @@
         .techs{
             display: flex;
             gap: 10px;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
+            p{
+                span{
+                    color: var(--orange);
+                }
+            }
             i{
                 font-size: 25px;
             }
@@ -29,6 +47,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            margin-bottom: 20px;
             i{
                 font-size: 20px;
                 transition-duration: .3s;
@@ -37,17 +56,17 @@
                     transform: scale(1.1);
                 }
             }
-            .btn{
-                border: 1px solid var(--orange);
-                color: var(--orange);
-                border-radius: 10px;
-                padding: .25rem 1rem;
-                transition-duration: .3s;
-                animation: animation1 4s linear infinite;
-                &:hover{
-                    animation: pause;
-                    transform: scale(1.1);
-                }
+        }
+        .btn{
+            border: 1px solid var(--orange);
+            color: var(--orange);
+            border-radius: 10px;
+            padding: .25rem 1rem;
+            transition-duration: .3s;
+            animation: animation1 4s linear infinite;
+            &:hover{
+                animation: pause;
+                transform: scale(1.1);
             }
         }
     }
